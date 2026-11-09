@@ -1,33 +1,47 @@
-# Release notes — v7
+# Release notes — Portfolio V8
 
-- **Sản phẩm:** Portfolio CV Nguyễn Thanh Bình
-- **Phiên bản bàn giao:** v7
-- **Ngày cập nhật:** 09/11/2026
-- **Tác giả:** Nguyễn Thanh Bình
+## 1. Thông tin phiên bản
 
-## Thay đổi chính
+- **Tên sản phẩm theo yêu cầu bàn giao:** Portfolio CV – Nguyễn Thanh Bình
+- **Phiên bản tài liệu:** V8.
+- **Repository:** [nguyenthanhbinh07/K20_Portfolio_CNTT20-04](https://github.com/nguyenthanhbinh07/K20_Portfolio_CNTT20-04).
+- **Website GitHub Pages:** [nguyenthanhbinh07.github.io/K20_Portfolio_CNTT20-04](https://nguyenthanhbinh07.github.io/K20_Portfolio_CNTT20-04/).
+- **Tag/commit phát hành V8:** chưa xác minh; repository hiện không có Git tag V8.
 
-- Bổ sung tài liệu dự án với hướng dẫn chạy local, mô tả cấu trúc, chức năng và cách kiểm tra các trang.
-- Sửa đường dẫn CSS ở trang chủ để tải đúng `css/style.css`.
-- Sửa đường dẫn ảnh đại diện để dùng `assets/avatar.svg`, tệp hiện có trong repository.
-- Ghi nhật ký AI và quyết định triển khai trong `AI_LOG.md`.
-- Ghi rõ URL GitHub Pages theo dự kiến hiện trả về 404; chưa xác nhận website được xuất bản.
+> **Cần xác nhận tên trước khi phát hành:** yêu cầu bàn giao ghi “Trần Việt Anh”, nhưng README và nội dung website hiện tại ghi “Nguyễn Thanh Bình”. Ghi chú này giữ tên theo yêu cầu, không thay đổi hay khẳng định lại danh tính trong mã nguồn.
 
-## Lỗi đã sửa
+## 2. Tổng quan phiên bản
 
-- Trang chủ tham chiếu `style.css` ở thư mục gốc thay vì `css/style.css`.
-- Trang chủ tham chiếu `assets/f.jpg`, tệp không có trong repository, nên ảnh đại diện không tải được.
+Portfolio là website tĩnh giới thiệu cá nhân, kỹ năng, dự án học tập, quá trình học tập và thông tin liên hệ. Repository có trang portfolio và trang kết quả biểu mẫu. V8 được dùng làm nhãn cho tài liệu bàn giao; do chưa có tag hoặc commit được xác nhận là bản phát hành V8, trạng thái phát hành chính thức chưa được xác minh.
 
-## Mã nguồn liên quan
+## 3. Nội dung nổi bật
 
-- [Repository — nhánh main](https://github.com/nguyenthanhbinh07/K20_Portfolio_CNTT20-04/tree/main)
-- [Commit nền hiện tại: `cc871c0` — Add files via upload](https://github.com/nguyenthanhbinh07/K20_Portfolio_CNTT20-04/commit/cc871c0)
+- Commit `88fc5a8` trên `origin/main` có thay đổi `index.html`, `css/style.css` và bốn tệp SVG trong `assets/`.
+- Changelog hiện chưa xác định được các thay đổi đó tương ứng với V8 hay có tag phát hành nào; vì vậy không gán thêm tính năng hoặc nâng cấp cụ thể cho V8.
 
-`cc871c0` là commit HEAD tại thời điểm lập ghi chú; các sửa đổi v7 trong phiên này chưa được commit. Bản mã chính xác để bàn giao là trạng thái làm việc gồm các thay đổi đang có trong repository, không phải riêng commit nền. Cập nhật liên kết commit sau khi các thay đổi được commit.
+## 4. Cách truy cập
 
-## Hạn chế còn lại và bàn giao
+1. Mở [website GitHub Pages](https://nguyenthanhbinh07.github.io/K20_Portfolio_CNTT20-04/). Trạng thái truy cập chưa được xác minh ổn định; nếu không mở được, dùng bản local.
+2. Clone repository:
 
-- GitHub Pages chưa được xác nhận hoạt động; URL đang trả 404. Bật Pages trong **Settings → Pages**, chọn nhánh `main` và thư mục gốc, chờ triển khai rồi kiểm tra URL.
-- Form chỉ thực hành xác thực phía trình duyệt và chuyển dữ liệu bằng GET tới trang kết quả. Không có gửi email hoặc lưu trữ phía máy chủ; dữ liệu có thể lộ trên URL.
-- Liên kết GitHub trong các thẻ dự án đang dẫn tới hồ sơ cá nhân, chưa phải mã nguồn riêng của từng dự án.
-- Tiếp tục kiểm tra theo các bước trong [README.md](./README.md), đặc biệt tải CSS/ảnh, thử xác thực form với dữ liệu không hợp lệ và hợp lệ, kiểm tra trang kết quả và bố cục màn hình nhỏ.
+   ```powershell
+   git clone https://github.com/nguyenthanhbinh07/K20_Portfolio_CNTT20-04.git
+   cd K20_Portfolio_CNTT20-04
+   ```
+
+3. Mở `index.html` bằng Live Server trong VS Code, hoặc chạy `py -m http.server 8000` ở thư mục dự án rồi truy cập `http://localhost:8000/`.
+
+## 5. Tài liệu bàn giao
+
+- [README.md](./README.md) — hướng dẫn sử dụng, chạy và kiểm tra.
+- [CHANGELOG.md](./CHANGELOG.md) — lịch sử thay đổi và những điểm chưa xác minh phiên bản.
+- [docs/AI_LOG.md](./docs/AI_LOG.md) — nhật ký sử dụng AI.
+- [docs/evidence-index.md](./docs/evidence-index.md) — danh mục minh chứng và kết quả kiểm thử.
+
+## 6. Giới hạn đã biết
+
+- Biểu mẫu chỉ xác thực phía trình duyệt và chuyển dữ liệu bằng GET tới `ket-qua.html`; không gửi email, không lưu dữ liệu trên máy chủ, và dữ liệu có thể xuất hiện trên URL.
+- GitHub Pages chưa được xác nhận hoạt động ổn định. Các lần kiểm tra được ghi nhận khác nhau; cần kiểm tra lại trong cửa sổ ẩn danh.
+- Thư mục minh chứng hiện chưa có ảnh kiểm thử.
+- Chưa có Git tag V7, V8 hoặc V8.1; ngày phát hành và commit phát hành V8 chưa được xác minh.
+- Tên sản phẩm yêu cầu khác tên hiện có trong README và website; cần xác nhận trước khi phát hành công khai.

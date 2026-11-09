@@ -1,76 +1,117 @@
-# Nguyễn Thanh Bình — Portfolio CV
+# Portfolio V8 — Nguyễn Thanh Bình
 
-Portfolio CV tĩnh giới thiệu thông tin, kỹ năng, dự án học tập và form liên hệ của Nguyễn Thanh Bình (Công nghệ Thông tin 20-04).
+## 1. Giới thiệu dự án
 
-## Liên kết
+Portfolio V8 là website tĩnh giới thiệu bản thân, kỹ năng, các dự án học tập, quá trình học tập và thông tin liên hệ của Nguyễn Thanh Bình, sinh viên ngành Công nghệ Thông tin 20-04. Website được xây dựng để người xem portfolio, giảng viên và nhà tuyển dụng có thể tham khảo thông tin và sản phẩm học tập.
 
-- **Mã nguồn:** [nguyenthanhbinh07/K20_Portfolio_CNTT20-04](https://github.com/nguyenthanhbinh07/K20_Portfolio_CNTT20-04)
-- **Hồ sơ tác giả:** [github.com/nguyenthanhbinh07](https://github.com/nguyenthanhbinh07)
-- **GitHub Pages:** [nguyenthanhbinh07.github.io/K20_Portfolio_CNTT20-04](https://nguyenthanhbinh07.github.io/K20_Portfolio_CNTT20-04/)
+## 2. Demo
 
-> **Tình trạng xuất bản:** URL Pages ở trên là địa chỉ dự kiến theo tên tài khoản và repository. Khi kiểm tra ngày 09/11/2026, URL trả về 404; vì vậy bản web hiện chưa được xác nhận là đã xuất bản. Để xuất bản, vào **Settings → Pages**, chọn triển khai từ nhánh `main` và thư mục gốc (`/root`), rồi kiểm tra lại URL sau khi GitHub hoàn tất triển khai.
+- **Website:** [https://nguyenthanhbinh07.github.io/K20_Portfolio_CNTT20-04/](https://nguyenthanhbinh07.github.io/K20_Portfolio_CNTT20-04/)
+- **Repository:** [https://github.com/nguyenthanhbinh07/K20_Portfolio_CNTT20-04](https://github.com/nguyenthanhbinh07/K20_Portfolio_CNTT20-04)
 
-## Sản phẩm
+**Lưu ý về website trực tuyến:** URL GitHub Pages là địa chỉ dự kiến. Lần kiểm tra được ghi nhận ngày 09/11/2026, địa chỉ này trả về HTTP 404, nên chưa thể xác nhận website đang được xuất bản. Có thể mở bản chạy cục bộ theo hướng dẫn bên dưới.
 
-Website HTML/CSS tĩnh, không cần cơ sở dữ liệu hay backend. Trang chủ có các mục Giới thiệu, Kỹ năng, Dự án, Học tập và Liên hệ; trang kết quả cho biết form đã được trình duyệt kiểm tra và gửi theo phương thức GET. Giao diện có bố cục responsive cho màn hình nhỏ.
+## 3. Chức năng chính
 
-Form chỉ dùng để thực hành: không gửi email, không lưu dữ liệu lên máy chủ. Các trường nhập được đưa vào URL bởi phương thức GET, vì vậy không nhập thông tin nhạy cảm.
+- **Giới thiệu cá nhân:** tên, vai trò sinh viên, định hướng học lập trình và mục tiêu tìm hiểu AI và Security.
+- **Kỹ năng:** các kỹ năng C++ cơ bản, HTML5, CSS3, Visual Studio Code, Git/GitHub và làm việc nhóm.
+- **Dự án:** giới thiệu bài tập C++ cơ bản, portfolio cá nhân và website thực hành HTML/CSS. Liên kết trong các thẻ dự án hiện dẫn tới hồ sơ GitHub cá nhân, không phải repository riêng của từng dự án.
+- **Quá trình học tập:** bảng học kỳ, học phần tiêu biểu và sản phẩm tương ứng.
+- **Thông tin liên hệ:** email, hồ sơ GitHub và lớp học.
+- **Biểu mẫu và trang kết quả:** biểu mẫu trong `index.html` dùng xác thực HTML5 phía trình duyệt: họ tên bắt buộc và ít nhất 2 ký tự, email bắt buộc đúng định dạng, lời nhắn bắt buộc từ 10 đến 500 ký tự. Khi gửi hợp lệ, biểu mẫu dùng phương thức GET để chuyển tới `ket-qua.html`. Trang kết quả thông báo biểu mẫu đã qua bước kiểm tra của trình duyệt; không có email nào được gửi và dữ liệu không được lưu trên máy chủ. Do dùng GET, dữ liệu nhập có thể xuất hiện trên URL — không gửi thông tin nhạy cảm.
 
-## Cấu trúc thư mục
+## 4. Công nghệ sử dụng
 
-```text
-.
-├── index.html          # Portfolio và form liên hệ
-├── ket-qua.html        # Trang kết quả sau khi gửi form
-├── README.md           # Hướng dẫn dự án
-├── AI_LOG.md           # Nhật ký sử dụng AI và quyết định
-├── RELEASE_NOTES.md    # Ghi chú bàn giao v7
-├── css/
-│   └── style.css       # Giao diện, responsive và trạng thái tương tác
-└── assets/
-    ├── avatar.svg      # Ảnh đại diện minh họa
-    ├── du-an-1.svg     # Minh họa dự án C++
-    ├── du-an-2.svg     # Minh họa portfolio
-    └── du-an-3.svg     # Minh họa website thực hành
-```
+- **HTML5:** cấu trúc hai trang và xác thực cơ bản cho biểu mẫu.
+- **CSS3:** định dạng giao diện, hiệu ứng và bố cục responsive.
+- **Google Fonts:** nạp phông Inter từ Google Fonts; cần kết nối Internet để tải phông này.
+- **Git và GitHub:** quản lý và lưu trữ repository.
+- **GitHub Pages:** địa chỉ dự kiến để xuất bản website; trạng thái hoạt động chưa được xác nhận như ghi chú ở mục Demo.
 
-## Chạy trên máy
+Dự án không sử dụng framework hoặc thư viện JavaScript.
 
-1. Tải hoặc clone repository:
+## 5. Hướng dẫn truy cập và chạy dự án
+
+### Truy cập website trực tuyến
+
+1. Mở [website Portfolio](https://nguyenthanhbinh07.github.io/K20_Portfolio_CNTT20-04/). Nếu URL chưa hoạt động, hãy chạy bản cục bộ theo các bước sau.
+
+### Clone và mở bằng VS Code
+
+1. Mở PowerShell hoặc Terminal và clone repository:
 
    ```powershell
    git clone https://github.com/nguyenthanhbinh07/K20_Portfolio_CNTT20-04.git
+   ```
+
+2. Chuyển vào thư mục dự án:
+
+   ```powershell
    cd K20_Portfolio_CNTT20-04
    ```
 
-2. Dùng Python 3 để chạy máy chủ tĩnh tại thư mục gốc:
+3. Mở thư mục hiện tại bằng Visual Studio Code:
+
+   ```powershell
+   code .
+   ```
+
+### Chạy website
+
+1. **Dùng Live Server:** trong VS Code, cài extension Live Server nếu chưa có; mở `index.html`, nhấp chuột phải và chọn **Open with Live Server**. Trang mở tại địa chỉ localhost do extension cung cấp.
+2. **Hoặc dùng Python:** từ thư mục gốc của repository, chạy:
 
    ```powershell
    py -m http.server 8000
    ```
 
-3. Mở `http://localhost:8000/` trong trình duyệt. Dừng máy chủ bằng `Ctrl+C`.
+3. Mở `http://localhost:8000/` trong trình duyệt. Để xem trang kết quả, gửi biểu mẫu hợp lệ hoặc mở `http://localhost:8000/ket-qua.html`.
+4. Khi dùng máy chủ Python, quay lại cửa sổ lệnh và nhấn `Ctrl+C` để dừng máy chủ.
 
-Có thể mở `index.html` trực tiếp, nhưng chạy máy chủ cục bộ giúp kiểm tra các đường dẫn tương đối như khi xuất bản.
+## 6. Cấu trúc thư mục
 
-## Cách kiểm tra trang và chức năng
+```text
+K20_Portfolio_CNTT20-04/
+├── assets/
+│   ├── avatar.svg
+│   ├── du-an-1.svg
+│   ├── du-an-2.svg
+│   └── du-an-3.svg
+├── css/
+│   └── style.css
+├── docs/
+│   ├── evidence/
+│   ├── AI_LOG.md
+│   └── evidence-index.md
+├── CHANGELOG.md
+├── README.md
+├── RELEASE_NOTES.md
+├── index.html
+└── ket-qua.html
+```
 
-1. Trên trang chủ, kiểm tra menu cuộn tới từng mục; xác nhận CSS được tải và ảnh đại diện cùng ba ảnh minh họa dự án hiển thị.
-2. Cuộn tới **Học tập** để xem bảng học phần.
-3. Tại **Liên hệ**, thử gửi form để kiểm tra xác thực HTML5:
-   - Họ tên bắt buộc, ít nhất 2 ký tự.
-   - Email bắt buộc và phải đúng định dạng email.
-   - Lời nhắn bắt buộc, từ 10 đến 500 ký tự.
-4. Nhập dữ liệu hợp lệ và gửi: trình duyệt chuyển tới `ket-qua.html`; trang này giải thích rằng không có email được gửi và dữ liệu không được lưu trên máy chủ. Với GET, dữ liệu có thể xuất hiện trên thanh địa chỉ.
-5. Dùng **Quay lại liên hệ** hoặc menu trên trang kết quả để trở về trang chủ.
-6. Thu nhỏ cửa sổ trình duyệt để kiểm tra bố cục responsive.
+`assets/` chứa ảnh đại diện và hình minh họa dự án; `css/style.css` định dạng cả trang chủ và trang kết quả. `docs/evidence/` dành cho các minh chứng, còn `docs/evidence-index.md` là danh mục minh chứng hiện có.
 
-## Hồ sơ và minh chứng
+## 7. Kiểm thử và giới hạn
 
-- [Trang chủ và nội dung portfolio](https://github.com/nguyenthanhbinh07/K20_Portfolio_CNTT20-04/blob/main/index.html)
-- [Trang kết quả form](https://github.com/nguyenthanhbinh07/K20_Portfolio_CNTT20-04/blob/main/ket-qua.html)
-- [CSS giao diện](https://github.com/nguyenthanhbinh07/K20_Portfolio_CNTT20-04/blob/main/css/style.css)
-- [Tài nguyên ảnh](https://github.com/nguyenthanhbinh07/K20_Portfolio_CNTT20-04/tree/main/assets)
-- [Nhật ký AI](./AI_LOG.md) · [Ghi chú bàn giao v7](./RELEASE_NOTES.md)
+### Đã kiểm tra
 
-Các liên kết GitHub trên là minh chứng mã nguồn; URL Pages hiện chưa hoạt động theo lần kiểm tra nêu trên. Các liên kết GitHub dưới thẻ dự án trong trang chủ hiện trỏ tới hồ sơ cá nhân, không phải repository riêng của từng dự án.
+- Theo ghi nhận kiểm tra ngày 09/11/2026, các tham chiếu CSS và ảnh cục bộ trong hai trang HTML trỏ tới tệp có trong repository.
+- Theo ghi nhận, máy chủ HTTP tĩnh cục bộ trả HTTP 200 cho trang chủ, trang kết quả, CSS và bốn ảnh.
+- Đã đối chiếu cấu hình form trong mã HTML: `action="ket-qua.html"`, `method="get"` và các ràng buộc `required`, `minlength`, `maxlength`, `type="email"`.
+- URL GitHub Pages đã được kiểm tra và trả về HTTP 404 tại thời điểm nêu trên.
+
+### Chưa kiểm tra hoặc còn giới hạn
+
+- Chưa xác nhận website đã triển khai thành công trên GitHub Pages; cần kiểm tra lại URL sau khi cấu hình Pages.
+- Chưa kiểm thử thao tác biểu mẫu trực tiếp trong trình duyệt với dữ liệu hợp lệ và không hợp lệ; hướng dẫn ở mục Chức năng chính mô tả các ràng buộc theo mã nguồn.
+- Chưa kiểm tra trực quan trên nhiều trình duyệt hoặc thiết bị. CSS có các breakpoint responsive, nhưng điều đó không thay thế việc kiểm thử thực tế.
+- Biểu mẫu chỉ là phần thực hành phía trình duyệt; không gửi email, không lưu dữ liệu và dữ liệu GET có thể xuất hiện trên thanh địa chỉ.
+- Các liên kết GitHub của thẻ dự án hiện trỏ tới hồ sơ cá nhân.
+
+## 8. Tài liệu liên quan
+
+- [CHANGELOG.md](./CHANGELOG.md) — lịch sử thay đổi.
+- [RELEASE_NOTES.md](./RELEASE_NOTES.md) — ghi chú bàn giao.
+- [docs/AI_LOG.md](./docs/AI_LOG.md) — nhật ký sử dụng AI.
+- [docs/evidence-index.md](./docs/evidence-index.md) — danh mục minh chứng.
